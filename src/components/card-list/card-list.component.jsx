@@ -17,20 +17,13 @@ export default class CardList extends Component{
 
   render() {
       return(
-        <div className='card-list'>
-          {this.props.monsters.map(monster =>( //props is giving monsters, iterating over the monsters array
-            <Card key={monster.id} monster={monster} /> //sending monter as props to Card Component
-          ))}
-        </div> 
+       
+          <div className='card-list'>
+            {this.props.monsters.map(monster =>( //props is giving monsters, iterating over the monsters array
+              <Card key={monster.id} monster={monster} /> //sending monter as props to Card Component
+            ))}
+          </div> 
+        
       )
   }
 };
-
-
-// export const CardList = props => ( // props are the properties which it get from the CardList component in App.js
-//      <div className='card-list'>
-//           {props.monsters.map(monster =>( //props is giving monsters, iterating over the monsters array
-//             <Card key={monster.id} monster={monster} /> //sending monter as props to Card Component
-//           ))}
-//     </div> // props.children is the data between the tag of component
-// );

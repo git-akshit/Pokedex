@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-    border: 1px solid #c63333;
+    border: 2px solid yellow;
     border-radius: 5px;
     padding: 25px;
     cursor: pointer;
@@ -13,7 +13,7 @@
     backface-visibility: hidden;
     transform: translateZ(0);
     transition: transform 0.25s ease-out;
-    color: #c63333;
+    color: black;
     text-transform:capitalize;
 
   }
@@ -27,3 +27,32 @@
     transform: scale(1.05);
   }
   
+  h1 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: h1 1.2s ease-in-out infinite alternate;
+    -moz-animation: h1 1s ease-in-out infinite alternate;
+    animation: h1 1s ease-in-out infinite alternate;
+   }
+   
+   @keyframes h1 {
+     from {
+       text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+     }
+     
+     to {
+       text-shadow: 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black, 0 0 80px black;
+     }
+   }
+
+   @media only screen and (max-width: 450px) {
+    .card-container{
+      padding: 0;
+      width: 94%;
+      margin-left: 2%;
+    }
+    h1{
+      font-size: 20px;
+    }
+  }

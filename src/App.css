@@ -3,10 +3,30 @@
 }
 
 .heading {
-  color: #c63333;
-  font-size: 72px;
- text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-
+ font-size: 80px;
+ color: #fff;
+ text-align: center;
+ -webkit-animation: heading 1.2s ease-in-out infinite alternate;
+ -moz-animation: heading 1s ease-in-out infinite alternate;
+ animation: heading 1s ease-in-out infinite alternate;
 }
+
+@keyframes heading {
+  from {
+    text-shadow: 0 0 10px #ffcb05, 0 0 20px #ffcb05, 0 0 30px #ffcb05, 0 0 40px #ffcb05, 0 0 50px #ffcb05, 0 0 60px #ffcb05, 0 0 70px #ffcb05;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #2a75bb, 0 0 30px #2a75bb, 0 0 40px #2a75bb, 0 0 50px #2a75bb, 0 0 60px #2a75bb, 0 0 70px #2a75bb, 0 0 80px #2a75bb;
+  }
+}
+
+
+@media only screen and (max-width: 350px) {
+  .heading{
+    font-size: 40px;
+  }
+}
+
 
 

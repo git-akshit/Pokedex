@@ -45,13 +45,15 @@ class App extends Component {
 
       return (
         <div className='App'>
-          <h1 className='heading'>Poke Dex</h1>
+          <h1 className='heading'>PokeMon</h1>
           <SearchBox
               placeholder = 'search pokemon'
               handleChange={this.handleChange} //e is the event which occurs on change o search field value, and we changing the state of the search field to value in it
           />
           {monsters ? (
+          
           < CardList monsters={filteredMonsters}/>
+          
           ):(
             <h1>Loading pokemon</h1>
           )}
